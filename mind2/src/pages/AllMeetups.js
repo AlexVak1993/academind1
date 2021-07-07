@@ -22,6 +22,7 @@ function AllMeetupsPage() {
           };
 
           meetups.push(meetup)
+          // console.log(meetups);
         }
 
         setIsLoading(false);
@@ -39,7 +40,7 @@ function AllMeetupsPage() {
 
   return (
     <section>
-      <h2>All Meetups</h2>
+      <h1>All Meetups</h1>
 
       <ul>
         <MeetupList meetups={loadedMeetups} />
